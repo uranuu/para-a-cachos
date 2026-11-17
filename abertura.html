@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Uma carta para Kamilly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css?v=6" />
+</head>
+<body class="pagina-abertura">
+  <div class="brilho-abertura" aria-hidden="true"></div>
+  <main class="abertura">
+    <p class="olho">Para você, com o coração na mão</p>
+    <h1>Kamilly</h1>
+    <p class="abertura-texto">Eu preparei um lugar só seu. Toque no envelope para abrir.</p>
+
+    <button class="envelope" id="abrir" type="button" aria-label="Abrir a carta para Kamilly">
+      <span class="envelope-aba"></span>
+      <span class="envelope-papel">
+        <em>Eu te amo.</em>
+        <small>Clique para continuar</small>
+      </span>
+      <span class="envelope-corpo">
+        <span class="selo">♥</span>
+      </span>
+    </button>
+
+    <p class="abertura-dica">É uma carta. É um site. É um pedido de desculpas e um “eu te amo”.</p>
+  </main>
+
+  <script>
+    const botao = document.getElementById("abrir");
+    const abrir = () => {
+      if (botao.classList.contains("aberto")) return;
+      botao.classList.add("aberto");
+      document.body.classList.add("abrindo");
+      for (let i = 0; i < 18; i += 1) {
+        const h = document.createElement("span");
+        h.className = "coracao-abertura";
+        h.textContent = i % 2 ? "♥" : "❀";
+        h.style.left = `${20 + Math.random() * 60}%`;
+        h.style.animationDelay = `${Math.random() * 0.4}s`;
+        document.body.appendChild(h);
+      }
+      setTimeout(() => {
+        document.body.classList.add("sumindo");
+      }, 1400);
+      setTimeout(() => {
+        location.href = "index.html#dentro";
+      }, 2200);
+    };
+    botao.addEventListener("click", abrir);
+    botao.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        abrir();
+      }
+    });
+  </script>
+</body>
+</html>

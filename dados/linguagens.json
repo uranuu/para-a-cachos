@@ -1,0 +1,172 @@
+[
+  {
+    "nome": "Python",
+    "tipo": "programação",
+    "codigo": "para = [\"Kamilly\", \"Cachos\", \"Matteo\"]\namor = {\"ela\": \"infinito\", \"filho\": \"para sempre\"}\nprint(f\"Eu te amo, {para[0]}.\")\nprint(f\"Cachos, você é o meu lugar.\")\nprint(f\"Matteo, seu pai ama a sua mãe.\")"
+  },
+  {
+    "nome": "JavaScript",
+    "tipo": "programação",
+    "codigo": "const familia = { ela: \"Kamilly\", apelido: \"Cachos\", filho: \"Matteo\" };\nconst amar = (nome) => `Eu te amo, ${nome}`;\nconsole.log(amar(familia.ela));\nconsole.log(`${familia.apelido}, me perdoa.`);\nconsole.log(`${familia.filho} merece ver esse amor.`);"
+  },
+  {
+    "nome": "TypeScript",
+    "tipo": "programação",
+    "codigo": "type Familia = { ela: string; apelido: string; filho: string };\nconst nos: Familia = { ela: \"Kamilly\", apelido: \"Cachos\", filho: \"Matteo\" };\nconst teAmo = (p: Familia): string => `Eu te amo, ${p.ela}.`;\nconsole.log(teAmo(nos));"
+  },
+  {
+    "nome": "HTML",
+    "tipo": "programação",
+    "codigo": "<h1>Kamilly</h1>\n<p>Cachos, este site inteiro é uma tag de amor.</p>\n<small>Matteo, seu pai escreveu isto para a sua mãe.</small>"
+  },
+  {
+    "nome": "CSS",
+    "tipo": "programação",
+    "codigo": ".kamilly { color: heart; font: forever; }\n.cachos { letter-spacing: wind; }\n.matteo { line-height: hope; }\namor { display: always; }"
+  },
+  {
+    "nome": "Java",
+    "tipo": "programação",
+    "codigo": "public class Amor {\n  public static void main(String[] args) {\n    String ela = \"Kamilly\";\n    System.out.println(\"Eu te amo, \" + ela + \".\");\n    System.out.println(\"Cachos, me perdoa.\");\n    System.out.println(\"Matteo, vocês são a minha casa.\");\n  }\n}"
+  },
+  {
+    "nome": "C",
+    "tipo": "programação",
+    "codigo": "#include <stdio.h>\nint main(void) {\n  printf(\"Kamilly, eu te amo.\\n\");\n  printf(\"Cachos, você é meu porto.\\n\");\n  printf(\"Matteo, papai ama a mamãe.\\n\");\n  return 0;\n}"
+  },
+  {
+    "nome": "C++",
+    "tipo": "programação",
+    "codigo": "#include <iostream>\nint main() {\n  std::cout << \"Kamilly, meu amor não tem overflow.\\n\";\n  std::cout << \"Cachos + Matteo = família.\\n\";\n}"
+  },
+  {
+    "nome": "C#",
+    "tipo": "programação",
+    "codigo": "Console.WriteLine(\"Kamilly, eu te amo\");\nConsole.WriteLine(\"Cachos, eu te escolho\");\nConsole.WriteLine(\"Matteo, eu cuido de vocês\");"
+  },
+  {
+    "nome": "Go",
+    "tipo": "programação",
+    "codigo": "package main\nimport \"fmt\"\nfunc main() {\n  fmt.Println(\"Kamilly, eu te amo\")\n  fmt.Println(\"Cachos, para sempre\")\n  fmt.Println(\"Matteo, papai está aqui\")\n}"
+  },
+  {
+    "nome": "Rust",
+    "tipo": "programação",
+    "codigo": "fn main() {\n    let ela = \"Kamilly\";\n    println!(\"Eu te amo, {ela}. Sem panic.\");\n    println!(\"Cachos e Matteo: meu unwrap favorito.\");\n}"
+  },
+  {
+    "nome": "Ruby",
+    "tipo": "programação",
+    "codigo": "ela = \"Kamilly\"\nputs \"Eu te amo, #{ela}\"\nputs \"Cachos, você é poesia\"\nputs \"Matteo, seu pai ama sua mãe\""
+  },
+  {
+    "nome": "PHP",
+    "tipo": "programação",
+    "codigo": "<?php\necho \"Kamilly, eu te amo\";\necho \"Cachos, me perdoa\";\necho \"Matteo, família é vocês dois\";\n?>"
+  },
+  {
+    "nome": "Swift",
+    "tipo": "programação",
+    "codigo": "let ela = \"Kamilly\"\nprint(\"Eu te amo, \\(ela)\")\nprint(\"Cachos, você é meu home.\")\nprint(\"Matteo, te amo também.\")"
+  },
+  {
+    "nome": "Kotlin",
+    "tipo": "programação",
+    "codigo": "fun main() {\n  println(\"Kamilly, eu te amo\")\n  println(\"Cachos, valeu a pena cada linha\")\n  println(\"Matteo, papai ama a mamãe\")\n}"
+  },
+  {
+    "nome": "Lua",
+    "tipo": "programação",
+    "codigo": "print(\"Kamilly, eu te amo\")\nprint(\"Cachos, você é a quest principal\")\nprint(\"Matteo, o save mais importante\")"
+  },
+  {
+    "nome": "R",
+    "tipo": "programação",
+    "codigo": "amor <- Inf\nnomes <- c(\"Kamilly\", \"Cachos\", \"Matteo\")\ncat(\"O amor por\", nomes[1], \"é\", amor, \"\\n\")"
+  },
+  {
+    "nome": "SQL",
+    "tipo": "programação",
+    "codigo": "SELECT 'Eu te amo' AS recado, 'Kamilly' AS ela, 'Cachos' AS apelido, 'Matteo' AS filho;\nUPDATE coracao SET escolha = 'Kamilly' WHERE 1=1;"
+  },
+  {
+    "nome": "Bash",
+    "tipo": "programação",
+    "codigo": "echo \"Kamilly, eu te amo\"\necho \"Cachos, me perdoa\"\necho \"Matteo, papai está tentando acertar\""
+  },
+  {
+    "nome": "PowerShell",
+    "tipo": "programação",
+    "codigo": "Write-Host \"Kamilly, eu te amo\"\nWrite-Host \"Cachos, você é meu lugar\"\nWrite-Host \"Matteo, vocês são a família\""
+  },
+  {
+    "nome": "Haskell",
+    "tipo": "programação",
+    "codigo": "teAmo ela = \"Eu te amo, \" ++ ela ++ \".\"\nmain = putStrLn (teAmo \"Kamilly\") >> putStrLn \"Cachos, para sempre\" >> putStrLn \"Matteo, papai ama a mamãe\""
+  },
+  {
+    "nome": "Elixir",
+    "tipo": "programação",
+    "codigo": "IO.puts \"Kamilly, eu te amo\"\nIO.puts \"Cachos, você é o processo que eu não quero matar\"\nIO.puts \"Matteo, supervisor da nossa alegria\""
+  },
+  {
+    "nome": "Dart",
+    "tipo": "programação",
+    "codigo": "void main() {\n  print('Kamilly, eu te amo');\n  print('Cachos, widget favorito do meu coração');\n  print('Matteo, futuro em construção');\n}"
+  },
+  {
+    "nome": "Scala",
+    "tipo": "programação",
+    "codigo": "object Amor extends App {\n  println(\"Kamilly, eu te amo\")\n  println(\"Cachos e Matteo: imutavelmente meus\")\n}"
+  },
+  {
+    "nome": "Perl",
+    "tipo": "programação",
+    "codigo": "print \"Kamilly, eu te amo\\n\";\nprint \"Cachos, você é regular no meu coração\\n\";\nprint \"Matteo, papai ama a mamãe\\n\";"
+  },
+  {
+    "nome": "Assembly",
+    "tipo": "programação",
+    "codigo": "; O mais baixo nível ainda sabe o seu nome\n; Kamilly\n; Cachos\n; Matteo\n; MOV AMOR, ETERNO"
+  },
+  {
+    "nome": "Português",
+    "tipo": "humana",
+    "codigo": "Eu te amo, Kamilly. Me perdoa, Cachos. Matteo, papai ama a mamãe."
+  },
+  {
+    "nome": "Inglês",
+    "tipo": "humana",
+    "codigo": "I love you, Kamilly. I'm sorry, Cachos. Matteo, your dad loves your mom."
+  },
+  {
+    "nome": "Espanhol",
+    "tipo": "humana",
+    "codigo": "Te amo, Kamilly. Perdóname, Cachos. Matteo, papá ama a mamá."
+  },
+  {
+    "nome": "Italiano",
+    "tipo": "humana",
+    "codigo": "Ti amo, Kamilly. Scusami, Cachos. Matteo, papà ama la mamma."
+  },
+  {
+    "nome": "Francês",
+    "tipo": "humana",
+    "codigo": "Je t'aime, Kamilly. Pardon, Cachos. Matteo, papa aime maman."
+  },
+  {
+    "nome": "Alemão",
+    "tipo": "humana",
+    "codigo": "Ich liebe dich, Kamilly. Es tut mir leid, Cachos. Matteo, Papa liebt Mama."
+  },
+  {
+    "nome": "Japonês",
+    "tipo": "humana",
+    "codigo": "愛してる、Kamilly。ごめんね、Cachos。Matteo、パパはママを愛している。"
+  },
+  {
+    "nome": "Libras (em palavras)",
+    "tipo": "humana",
+    "codigo": "AMOR + VOCÊ + KAMILLY. DESCULPA + CACHOS. FILHO + MATTEO + FAMÍLIA."
+  }
+]

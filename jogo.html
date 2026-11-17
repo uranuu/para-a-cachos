@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo — Para Cachos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css?v=13" />
+</head>
+<body>
+  <nav class="topo" data-nav></nav>
+  <main class="conteudo jogo-pagina">
+    <p class="olho">Só para você</p>
+    <div class="secao-titulo" style="margin-top:0.6rem">
+      <h2>Uma chuva de corações</h2>
+    </div>
+    <p class="jogo-intro">Mova o envelope com o mouse, o dedo ou as setas. Pegue corações e flores. Desvie do orgulho. O tempo corre, o combo sobe, e o recorde fica guardado.</p>
+    <div class="jogo-placar">
+      <div class="jogo-stat"><span>Pontos</span><strong data-jogo-pontos>0</strong></div>
+      <div class="jogo-stat"><span>Combo</span><strong data-jogo-combo>x1</strong></div>
+      <div class="jogo-stat"><span>Pegos</span><strong data-jogo-pegos>0</strong></div>
+      <div class="jogo-stat"><span>Tempo</span><strong data-jogo-tempo>0:45</strong></div>
+      <div class="jogo-stat"><span>Vidas</span><strong class="jogo-vidas" data-jogo-vidas>♥♥♥</strong></div>
+    </div>
+    <section class="jogo" data-jogo>
+      <div class="jogo-ceu" data-jogo-ceu></div>
+      <div class="jogo-cesta" data-cesta>
+        <span class="aba"></span>
+        <span class="corpo"></span>
+        <span class="selo">♥</span>
+      </div>
+      <div class="jogo-painel" data-jogo-inicio>
+        <div class="jogo-caixa">
+          <h2>Cachos, pega esses corações?</h2>
+          <p>45 segundos. 3 vidas. Quanto mais você pega em sequência, maior o combo. Recorde atual: <strong data-jogo-recorde>0</strong>.</p>
+          <button class="botao" type="button" data-jogo-comecar>Começar</button>
+          <p class="jogo-lenda"><span>♥ +10</span><span>♥ dourado +30</span><span>❀ +15</span><span>☁ desvie</span></p>
+        </div>
+      </div>
+      <div class="jogo-painel oculto" data-jogo-fim>
+        <div class="jogo-caixa">
+          <h2 data-jogo-titulo-fim>Fim da chuva</h2>
+          <div class="jogo-resultado">
+            <p>Pontos <strong data-fim-pontos>0</strong></p>
+            <p>Corações <strong data-fim-pegos>0</strong></p>
+            <p>Melhor combo <strong data-fim-combo>x1</strong></p>
+            <p>Recorde <strong data-fim-recorde>0</strong></p>
+          </div>
+          <p data-jogo-msg-fim>É assim que eu te amo: em números, em chuva, e ainda assim incompleto.</p>
+          <button class="botao" type="button" data-jogo-de-novo>Jogar de novo</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">Um joguinho bobo. Um amor sério.</footer>
+  <script src="js/site.js?v=13"></script>
+  <script src="js/jogo.js?v=2"></script>
+</body>
+</html>
